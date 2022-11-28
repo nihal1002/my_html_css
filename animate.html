@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 90vh;
+            margin: 0 auto;
+            background-color: lightgreen;
+        }
+        div{
+            width: 8rem;
+            height: 8rem;
+            background-color: rgb(219, 48, 18);
+            position: relative;
+            animation-name: square;
+            animation-duration: 20s;
+            animation-timing-function: ease-in-out ;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+        div:hover{
+            animation-play-state: paused;
+        }
+        @keyframes square{
+            0% {
+                top: 0;
+                left: 0;
+                background-color: rgb(24, 158, 242);
+                border-radius: 0;
+            }
+            15%{
+                top: 45%;
+                left: 45%;
+                background-color: palevioletred;
+            }
+            25%{
+                top: 0;
+                left: 91%;
+                background-color: #FFF56D;
+                transform: rotateY(180deg);
+                border-radius: 50%;
+            }
+            50%{
+                top: 79%;
+                left: 91%;
+                background-color: darkslateblue;
+                transform: rotateX(180deg);
+                border-radius: 0;
+            }
+            65%{
+                top: 45%;
+                left: 45%;
+                background-color: aqua;
+            }
+            75%{
+                top: 79%;
+                left: 0;
+                background-color: rgb(219, 48, 18);
+                transform: rotateY(-180deg);
+                border-radius: 50%;
+            }
+            100% {
+                top: 0;
+                left: 91%;
+                background-color: darkblue;
+                transform: rotateY(180deg);
+                border-radius: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <section id="sec1">
+        <div id="div1"></div>
+    </section>
+</body>
+</html>

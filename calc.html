@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.maindiv{
+            margin: 2rem 2rem;
+            background-color: yellow;
+            display: flex;
+            width: 100vw;
+            height: 70vh;
+        }
+        /* div.maindiv > div{
+
+            width: calc(100vw/12);
+            height: 70vh;
+            border: 1px solid rebeccapurple;
+        } */
+        #div1{
+            width: calc(calc(100vw) - calc(500px - 4*100px));
+            height: calc(100vh/2);
+            border: 1px solid darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div id="div1"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

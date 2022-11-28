@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image element</title>
+    <style>
+        img{
+            border:5px double blue;
+            border-radius: 100px;
+            }
+            img[title]{
+                border: 5px dashed orange;
+                border-radius: 100px;
+            }
+            img[title="logol"]{
+                border: 15px dotted yellow;
+                border-radius: 100px;
+            }
+            /* it will apply style to an element whose attribute value start with wrd image */
+            img[alt ^="image"]{
+                width: 160px;
+                height: auto;
+                border-radius: 100px;
+                opacity: 0.5;
+            }
+            /* it will apply style to an element whose attribute value start with wrd logo */
+            img[alt $="logo"]{
+                border: 10px pink;
+                border-radius: 150px;
+             }
+            
+             img[alt *=" "]{
+                border:1px solid red;
+                border-radius: 10px;
+             }
+              /* it will apply style to an element whose attribute value start space */
+             img[ alt ~=" "]{
+                border:1px solid green;
+                border-radius: 40px;
+             }
+
+
+    </style>
+</head>
+<body>
+    <h1>anchor tag</h1>
+    <img src="logo.jpg" width="50px" height="auto" alt="image of a logo" title="logo">
+    <img src="pic.jpg" height="auto" alt="pic-logo1" title="logo1">
+     
+</body>
+</html>

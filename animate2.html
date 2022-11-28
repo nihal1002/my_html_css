@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgreen;
+        }
+        img.img1{
+            width: 10rem;
+            height: 20rem;
+            position: relative;
+            animation-name: ikiris;
+            animation-duration: 15s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.01s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+        img.img2{
+            width: 9rem;
+            height: 18rem;
+            position: relative;
+            left: 75rem;
+            top: 0rem;
+            animation-name: strange1;
+            animation-duration: 16s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+        img.img3{
+            width: 9rem;
+            height: 18rem;
+            position: relative;
+            animation-name: strange2;
+            animation-duration: 15s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.01s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+        img.img4{
+            width: 9rem;
+            height: 18rem;
+            position: relative;
+            animation-name: thor;
+            animation-duration: 15s;
+            animation-timing-function: ease-in;
+            animation-delay: 0.01s;
+            animation-iteration-count: 5;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        img.img5{
+            width: 9rem;
+            height: 18rem;
+            position: relative;
+            animation-name: spider;
+            animation-duration: 8s;
+            animation-timing-function: ease-in;
+            animation-delay: 0.01s;
+            animation-iteration-count: 5;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ikiris{
+            0%{
+                left: 0;
+                top: 0;
+            }
+            50%{
+                left: 10rem;
+                top: 17rem;
+            }
+            100%{
+                left: 15rem;
+                top: 10rem;
+            }
+        }
+        @keyframes strange1{
+            0%{
+                left: 75rem;
+                top: 0rem;
+            }
+            25%{
+                visibility: hidden;
+                left: 65rem;
+                top: 25rem;
+            }
+            50%{
+                visibility: hidden;
+                left: 45rem;
+                top: 25rem;
+            }
+            75%{
+                visibility: hidden;
+                left: 30rem;
+                top: 25rem;
+            }
+            99%{
+                left: 20rem;
+                top: 25rem;
+            }
+            100%{
+                left: 75rem;
+                top: 0rem;
+            }
+        }
+        @keyframes strange2{
+            0%{
+                left: 8rem;
+                top: 22rem;
+            }
+            50%{
+                left: 4rem;
+                top: 20rem;
+            }
+            100%{
+                left: 0rem;
+                top: 15rem;
+            }
+        }
+        @keyframes thor{
+            0%{
+                left: 35rem;
+                top: 0rem;
+            }
+            25%{
+                left: 10rem;
+                top: 25rem;
+            }
+            50%{
+                left: 0rem;
+                top: 25rem;
+            }
+            75%{
+                left: 0rem;
+                top: 20rem;
+            }
+            99%{
+                left: 0rem;
+                top: 20rem;
+            }
+            100%{
+                left: 55rem;
+                top: 20rem;
+            }
+            
+        }
+        @keyframes spider{
+            0%{
+                left: 4rem;
+                top: 0rem;
+            }
+            50%{
+                left: 4rem;
+                top: 20rem;
+            }
+            100%{
+                left: 4rem;
+                top: 30rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+            <img class="img1" src="images/img1/ikiris1.gif">
+            <img class="img2" src="images/img1/strang1.gif">
+            <img class="img3" src="images/img1/strange2.gif">
+            <img class="img4" src="images/img1/thor1.gif">
+            <img class="img5" src="images/img1/spidy4.gif">
+    </section>
+</body>
+</html> 

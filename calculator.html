@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            background-color: darkslateblue;
+            margin: 10rem auto;
+            padding: 0.2rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30rem;
+            height: 24rem;
+        }
+        input{
+            width: 29.5rem;
+            height: 5rem;
+            background-color: cyan;
+            color: aliceblue;
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 3px;
+        }
+        #display{
+            color: black;
+        }
+        button{
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            background-color: deepskyblue;
+            color: black;
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 3px;
+        }
+        button#buttentr{
+            width: 14.2rem;
+        }
+        button#buttclr{
+            width: 7rem;
+            height: 10rem;
+        }
+        button#buttdot{
+            width: 7rem;
+            height: 10rem;
+        }
+        button#buttdiv{
+            width: 7rem;
+        }
+        button#buttmod{
+            width: 7rem;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="5">
+                    <input type="text" id="display" placeholder="calculate">
+                </td>
+            </tr>
+            <tr>
+               <td><button onclick="disc('+')"  id="btn+">+</button></td>
+               <td><button onclick="disc('-')"  id="btn-">-</button></td>
+               <td><button onclick="disc('*')"  id="btn*">*</button></td>
+               <td><button onclick="disc('/')"  id="btndiv">/</button></td>
+               <td><button onclick="disc('%')"  id="btnmod">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="disc('1')"  id="btn1">1</button></td>
+                <td><button onclick="disc('2')"  id="btn2">2</button></td>
+                <td><button onclick="disc('3')"  id="btn3">3</button></td>
+                <td colspan="2"><button onclick="solve()" id="buttentr">=</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="disc('4')"  id="btn4">4</button></td>
+                <td><button onclick="disc('5')"  id="btn5">5</button></td>
+                <td><button onclick="disc('6')"  id="btn6">6</button></td>
+                <td rowspan="2"><button onclick="clear1()"  id="btnclr">clr</button></td>
+                <td rowspan="2"><button onclick="disc('.')"  id="btndot">.</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="disc('7')"  id="btn7">7</button></td>
+                <td><button onclick="disc('8')"  id="btn8">8</button></td>
+                <td><button onclick="disc('9')"  id="btn9">9</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function disc(val){
+            document.getElementById('display').value += val;
+        }
+        // function clear(){
+        //     document.getElementById('display').value = "";
+        // }
+        function clear1(){
+            let str = document.getElementById("display").value;
+
+            let y = str.slice(0,-1);
+            document.getElementById("display").value = y;
+        }
+        function solve(){
+            let x = document.getElementById("display").value;
+
+            let y = eval(x);
+            document.getElementById("display").value = y;
+        }
+    </script>
+</body>
+</html>

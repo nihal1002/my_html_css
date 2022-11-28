@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            background-color:lightcyan;
+            color:wheat;
+        }
+        table{
+            padding: 0.5rem;
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            border-radius: 2rem;
+            background-color:#FF0063;
+            width: 30%; height: auto;
+        }
+        th{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 1.5rem;
+            border-collapse: collapse;
+            background-color: darkblue;
+            padding: 0.7rem;
+        }
+        td{
+            border: 2px solid black;
+            border-radius: 0.5rem;
+            border-collapse: collapse;
+            background-color: darkmagenta;
+            padding: 0.2rem;
+        }
+        #center{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5em;
+        }
+        #pic{
+            margin-left: 1.6rem;
+        }
+        #add{
+            background-color: darkmagenta;
+        }
+        #head{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <table id="center">
+        <thead>
+            <tr>
+                <th colspan="3" id="head">New Horizon Institute Of Technology And Management</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"><img src="IMAGES/nihal sardar.jpg" width="90 rem" id="pic"></td>
+                <td>Name: Nihal Sudhir Sardar</td>
+            </tr>
+            <tr>
+                <td> Roll No.: 21</td>
+            </tr>
+            <tr>
+                <td> Course: Mechatronics Engineering</td>
+            </tr>
+            <tr>
+                <td>Year: BE</td>
+            </tr>
+            <tr>
+                <td>Ph: +918928692559</td>
+                <td> Academic Year: 2021-2022</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                   <p id="add">Address: 003/C,Kavita Soc.,SaiNagar, Kasarvadavali,Thane(w).400615</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

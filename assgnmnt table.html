@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assgnmnt Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <style>
+        *{
+            background-color: lightskyblue;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            color:bisque;
+            font-family: 'Splash', cursive;
+        }
+        table{
+            border-collapse: collapse;
+            border: 1px solid whitesmoke;
+            width: 50%; height: auto;
+        }
+        th{
+            border: 1px solid whitesmoke;
+            background-color: blueviolet;
+        }
+        td{
+            background-color: darkmagenta;
+        }
+        #center{
+            margin-top: 10rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .d1{
+            border: 1px solid whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <Table id="center">
+        <thead>
+            <tr>
+                <th rowspan="2">roll no.</th>
+                <th colspan="2">students record</th>
+            </tr>
+            <tr>
+                <th>name</th>
+                <th>marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td id="d1">thor</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td class="d1">2</td>
+                <td>batman</td>
+                <td class="d1">30</td>
+            </tr>
+            <td class="d1">3</td>
+            <td>hulk</td>
+            <td class="d1">55</td>
+        </tr>
+        </tbody>
+    </Table>
+    
+</body>
+</html>

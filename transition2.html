@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.main{
+            width: 20.3vw;
+            height: 40.5vh;
+            border: 2px solid red;
+            perspective: 110vh;
+            position: relative;
+            display: flex;
+        }
+        div.child1{
+            width: 20vw;
+            height: 40vh;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.child2{
+            width: 20vw;
+            height: 40vh;
+            position: relative;
+            transition: all 4s ease;
+            transform: rotateY(0deg);
+            transform-origin: top left;
+            background-color: cyan;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 18rem;
+            height: 18rem ;
+            display: flex;
+        }
+        div.child2:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="child1"><img src="images/img1/strang1.gif"></div>
+            <div class="child2"><p>BOOK OF VISHANTI </p></div>
+        </div>
+</section>
+</body>
+</html>

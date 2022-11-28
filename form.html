@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST" enctype="" target="_blank">
+        <fieldset>
+            <legend>YOUR PROFILE</legend>
+
+            <label for="Firstname">Firstname:
+                <input type="text" name="fname" readonly placeholder="enter your Fname if u can">
+            </label>
+            <hr>
+            <label for="Lastname" >Lastname:
+                <input type="text" name="lname" required id="Lastname" placeholder="enter your Lname">
+            </label>
+            <hr>
+            <label for="email">email:
+                <input type="email" name="email" required placeholder="email id">
+            </label>
+            <hr>
+            <label for="password">password:
+                <input type="password" name="password" required placeholder="password">
+            </label>
+            <hr>
+            <label for="Address">Add:
+                <textarea cols="20" rows="5" placeholder="enter your address" required></textarea>
+            </label>
+            <hr>
+            <label for="Gender"> Gender:
+                Male:
+                <input type="radio" name="gender" value="Male" checked>
+                Female:
+                <input type="radio" name="gender" value="Female">
+                others:
+                <input type="radio" name="gender" value="others">
+            </label>
+            <hr>
+            <label for="Courses">Courses:
+                html5:<input type="checkbox" name="course1" checked>
+                CSS3:<input type="checkbox" name="course2" >
+                JS:<input type="checkbox" name="course2" >
+            </label>
+            <hr>
+            <label for="Age">Age:
+                <input type="number" name="age" min="10" max="100" value="18">
+            </label>
+            <hr>
+            <label>Phone:
+                <input type="tel" name="Phone" pattern="[0-9]" maxlength="10"> 
+            </label>
+            <hr>
+            <label for="range">Range:
+                <input type="range" name="range">
+            </label>
+            <hr>
+            <label for="url">Url:
+                <input type="url" name="url">
+            </label>
+            <hr>
+            <label for="color"> color:
+                <input type="color" name="color">
+            </label>
+            <hr>
+            <label for="date">date:
+                <input type="date" name="date">
+            </label>
+            <hr>
+            <label for="time">birthdate & time
+                <input type="datetime-local" name="time">
+            </label>
+            <label for="city">City:
+                <select name="City">
+                    <option name="thane" >thane</option>
+                    <option name="mumbai" >mumbai</option>
+                    <option name="pune" >pune</option>
+                </select>
+            </label>
+            <hr>
+            <label for="file">upload file:
+                <input type="file" name="file">
+            </label>
+            <hr>
+            <div id="button">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+                <button class="button">done</button>    
+            </div>
+        </fieldset>    
+    </form>
+</body>
+</html>

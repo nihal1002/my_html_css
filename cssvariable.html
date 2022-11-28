@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         :root{
+            --bgcolor: red;
+            --gcolor: yellow;
+         }
+         div{
+            /* --bgcolor: yellow;
+            --gcolor: red; */
+            background-color: var(--gcolor);
+            color: var(--bgcolor);
+            width: 40rem;
+            height: 20rem;
+
+         }
+         section{
+            /* --bgcolor: blue;
+            --gcolor: yellow; */
+            background-color: var(--bgcolor);
+            color: var(--gcolor);
+            width: 40rem;
+            height: 20rem;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet.
+    </div>
+    <section>
+        Lorem ipsum dolor sit amet.
+    </section>
+</body>
+</html>

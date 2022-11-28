@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   
+        section{
+            margin: 5rem 25rem;
+            width: 40rem;
+            height: 40rem;
+            position: relative;
+        }
+        div{
+            margin: -0.19rem;
+            width: 5rem;
+            height: 5rem;
+            position: relative;
+            display: inline-block;
+        }
+        div.row1:nth-of-type(odd) {
+            background-color: blanchedalmond;
+        }
+        div.row1:nth-of-type(even){
+            background-color: darkslateblue;
+        }
+        div.row2:nth-of-type(even) {
+            background-color: blanchedalmond;
+        }
+        div.row2:nth-of-type(odd){
+            background-color: darkslateblue;
+        }
+        img{
+            width: 99.5%;
+            height: 99%;
+            position: absolute;
+            z-index: 1;
+        }
+        #rooks{
+            /* position: absolute; */
+            /* top: 9.7rem; */
+        }
+        #knight{
+            top: 19.4rem;
+            left: 0rem;
+            visibility: hidden;
+        }
+        #pawn1{
+            top: 14.7rem;
+            left: 5rem;
+        }
+        #b-pawn3{
+            bottom: 10rem;
+            right: 5rem;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="row1"><img src="images/img/m-rooks.png" id="rooks"> </div>   
+        <div class="row1"><img src="images/img/knight.png" id="knight"> </div>
+        <div class="row1"><img src="images/img/bishop (1).png" id="bishop"></div>
+        <div class="row1"><img src="images/img/king (1).png" id="king">
+        </div>
+        <div class="row1"><img src="images/img/queen (1).png" id="queen"> </div>
+        <div class="row1"><img src="images/img/bishop (1).png" id="bishop2"> </div>
+        <div class="row1"><img src="images/img/knight.png" id="knight2"> </div>
+        <div class="row1"><img src="images/img/m-rooks.png" id="rooks2"> </div>
+
+        <div class="row2"><img src="images/img/pawn.png" id="pawn1"></div>   
+        <div class="row2"><img src="images/img/pawn.png" id="pawn2"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn3"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn4"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn5"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn6"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn7"></div>
+        <div class="row2"><img src="images/img/pawn.png" id="pawn8"></div>
+
+
+        <div class="row1"></div>   
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+
+        <div class="row2"></div>   
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+
+
+        <div class="row1"></div>   
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+
+        <div class="row2"></div>   
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+
+
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn1"></div>   
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn2"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn3"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn4"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn5"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn6"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn7"></div>
+        <div class="row1"><img src="images/img/b-pawn.png" id="b-pawn8"></div>
+
+        <div class="row2"><img src="images/img/rooks.png" id="b-rooks"></div>   
+        <div class="row2"><img src="images/img/b-knight.png" id="b-knight"></div>
+        <div class="row2"><img src="images/img/b-bishop.png" id="b-bishop"></div>
+        <div class="row2"><img src="images/img/b-king.png" id="b-king"></div>
+        <div class="row2"><img src="images/img/king.png" id="b-queen"></div>
+        <div class="row2"><img src="images/img/b-bishop.png" id="b-bishop"></div>
+        <div class="row2"><img src="images/img/b-knight.png" id="b-knight"></div>
+        <div class="row2"><img src="images/img/rooks.png" id="b-rooks"></div>
+
+
+    </section>
+    </html>
+</body>

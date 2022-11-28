@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div#div1{
+            margin: 10rem auto;
+            width: 15rem;
+            height: 1rem;
+            background-color: cyan;
+            border: 1px solid black;
+            border-right: 15px solid red;
+            border-left: 1rem solid green;
+            /* transform-origin: bottom left; */
+            transition: all 2s ease-in-out;
+            transform: rotate(0deg) scale(1);
+        }
+        div#div1:hover{
+            transform: rotate(180deg) scale(1);
+        }
+        div#div2{
+            margin: 10rem auto;
+            width: 19rem;
+            height: 20rem;
+            background-color: cyan;
+            border: 1px solid black;
+            border-right: 15px solid red;
+            border-left: 1rem solid green;
+            transform: skewX(0deg);
+            transition: all 2s ease-in-out;
+            /* transform: skewY(0deg); */
+            /* transform: skew(0deg); */
+        }
+        div#div3{
+            margin: 10rem auto;
+            width: 15rem;
+            height: 1rem;
+            background-color: cyan;
+            border: 1px solid black;
+            transition: all 2s ease-in-out;
+            transform: translateX(0);
+            /* transform: translate3d(0rem, 0rem, 0rem); */
+            transform: perspective(10rem);
+            /* transform: rotate(0deg); */
+        
+        }
+        div#div2:hover{
+             transform: skewX(60deg); 
+             /* transform: skewY(60deg);  */
+            /* transform: skew(60deg); */
+        }
+        div#div3:hover{
+            transform: translateX(20rem);
+            /* transform: translate3d(20rem, -20rem, 20rem); */
+            /* transform: rotate(720deg); */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

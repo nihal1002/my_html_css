@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }  
+        svg{ 
+            margin: 2rem;
+            background-color: darkblue;
+            border-radius: 2.5rem 0.5rem 2rem 0.5rem;
+        }
+        rect{
+            transform: translate(105px, 60px);
+        }
+    </style>
+</head>
+<body>
+    <h1> create circle</h1>
+    <svg width="500" height="200">
+        <circle cx="250" cy="100" r="95" style="stroke:aqua; stroke-width: 1; fill: pink" ></circle>
+    </svg>
+    <h1> create ellipse</h1>
+    <svg width="500" height="200">
+        <ellipse cx="250" cy="100" rx="200" ry="95" style="stroke: darkred; stroke-width: 1; fill: cyan" ></ellipse>
+    </svg>
+    <svg class="rectangle" width="500px" height="200px">
+        <rect width="300" height="70" style="stroke: darkred; stroke-width: 1; fill: cyan" ></rect>
+    </svg>
+    <h1> rectangle</h1>
+    <svg width="500" height="300">
+        <rect width="200" height="200" rx="25" ry="25" style="stroke: yellow; stroke-width:3; fill: purple"></rect>
+        <circle cx="205" cy="58" r="20" style="stroke: yellow; stroke-width: 1; fill: yellow" ></circle>
+        <text x="165" y="170" fill="red">RECTANGLE</text>
+    </svg>
+    <h2>line</h2>
+    <svg width="500" height="300">
+        <line x1="50" y1="150" x2="450" y2="150" style="stroke: orange; stroke-width:3" ></line>
+    </svg>
+    <h1>polygon</h1>
+    <svg width="500" height="300">
+        <polygon points="100,150 400,50 400,250" style="stroke:cyan; fill:red "></polygon>
+    </svg>
+    <h1>polyline</h1>
+    <svg width="500" height="300">
+        <polyline points="0,150 50,150 50,100 100,100 250,290 400,100 450,100 450,150 500,150" style="stroke:cyan; fill:none"></polyline>
+    </svg>
+    <h1>gun</h1>
+    <svg width="600" height="400">
+        <polyline points="50,150 50,100 100,50 550,50 550,100 450,100 450,150 200,150 200,300 50,300 50,150 " style="stroke:cyan; fill:none"></polyline>
+    </svg>
+</body>
+</html>
